@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- intro animation -->
+      <!-- 3 pages on top of each other -->
+      <!-- 1. home -->
+      <!-- 2. about -->
+      <!-- 3. projects -->
+      <!-- all 3 have the same nav bar ? -->
+
+      <div id="nav-bar">
+        <a href="#home">
+          <button class="nav-btn" id="home-btn">Home</button>
+        </a>
+        <a href="#about">
+          <button class="nav-btn" id="about-btn">About</button>
+        </a>
+        <a href="#projects">
+          <button class="nav-btn" id="projects-btn">Projects</button>
+        </a>
+      </div>
+      <div id="start-animation" class="page">
+        <!-- <div id="tree-lightbulb">
+          <img src="/images/tree.png" alt="" />
+        </div> -->
+      </div>
+
+      <div class="page" id="home">
+        <div id="remaining-space-home">
+          <div id="contact-home">
+            <img src="/images/linkedin.png" alt="" />
+            <img src="/images/email.png" alt="" />
+            <img src="/images/phone.png" alt="" />
+            <img src="/images/github.png" alt="" />
+          </div>
+          <div id="veronica"></div>
+        </div>
+        <div id="frame-right"></div>
+      </div>
+
+      <div class="page" id="about">
+        <div id="frame-left"></div>
+        <div id="remaining-space-about">
+          <img id="profile-pic" src="/images/Elephant.png" alt="" />
+          <div id="about-text-container">
+            <p class="about-text">
+              Hi, I’m Veronica, an ex bio-engineer transitioning to the dynamic
+              world of front-end development. My journey began in the
+              intricacies of biological systems, where precision and attention
+              to detail is equal to those in the world of coding were I now feel
+              truly at home.
+            </p>
+            <p class="about-text">
+              My enjoyment of problem-solving transfers to my hobbies witch
+              includes puzzles of various kind, strategy games and staying at
+              home chilling with my furry squad of cats.
+            </p>
+            <p class="about-text">
+              I’m excited about the opportunity to expand my skill-set and dive
+              head first into new learning experiences as I evolve along this
+              path. Each line of code I write is not just a piece of a project
+              but also a step forward in my personal and professional growth.
+            </p>
+          </div>
+          <div id="contact-about">
+            <img src="/images/linkedin.png" alt="" />
+            <img src="/images/email.png" alt="" />
+            <img src="/images/phone.png" alt="" />
+            <img src="/images/github.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="page" id="projects">
+        <div id="projects-left">
+          <div class="project-card" onclick="displayProjectFunction(0)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+
+          <div class="project-card" onclick="displayProjectFunction(1)">
+            <img src="/images/project-drum-small.png" alt="" />
+            <div class="project-name"><p>Drum-Machine</p></div>
+          </div>
+          <div class="project-card" onclick="displayProjectFunction(2)">
+            <img src="/images/project-match-small.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+          <div class="project-card" onclick="displayProjectFunction(3)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+        </div>
+
+        <div id="project-container"></div>
+
+        <div id="projects-right">
+          <div class="project-card" onclick="displayProjectFunction(4)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+          <div class="project-card" onclick="displayProjectFunction(5)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+          <div class="project-card" onclick="displayProjectFunction(6)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+          <div class="project-card" onclick="displayProjectFunction(7)">
+            <img src="/images/meal-review2.png" alt="" />
+            <div class="project-name"><p>Meal Review</p></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
