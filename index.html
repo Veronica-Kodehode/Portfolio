@@ -17,12 +17,22 @@
   </head>
   <body>
     <main>
+      
+      <!-- TO DO -->
+      
       <!-- intro animation -->
-      <!-- 3 pages on top of each other -->
-      <!-- 1. home -->
-      <!-- 2. about -->
-      <!-- 3. projects -->
-      <!-- all 3 have the same nav bar ? -->
+      <!-- smooth transitions between "pages" -->
+      <!-- dropdown menu for "contact" -->
+      <!-- links in the contact dropdown -->
+      <!-- links in the project section -->
+      <!-- add container for image in big project, specific size -->
+      <!-- add all the right data for big project display -->
+      <!-- layout of big project display -->
+      <!-- full responsiveness check + media queries -->
+      <!-- go trough all css code -->
+      <!-- firefly effect (canvas?) -->
+
+      
 
       <div id="nav-bar">
         <a href="#home">
@@ -34,21 +44,39 @@
         <a href="#projects">
           <button class="nav-btn" id="projects-btn">Projects</button>
         </a>
+        <div id="dropdown">
+        <a href="#contact">
+          <button class="nav-btn" id="contact-btn">Contact</button>
+        </a>
+          <div id="dropdown-menu">
+          <img src="images/linkedin.png" alt="" />
+          <img src="images/email.png" alt="" />
+          <img src="images/phone.png" alt="" />
+          <img src="images/github.png" alt="" />
+        </div>
       </div>
-      <div id="start-animation" class="page">
-        <!-- <div id="tree-lightbulb">
-          <img src="/images/tree.png" alt="" />
+    </div>
+        <!-- <div id="contact">
+          <img src="images/linkedin.png" alt="" />
+          <img src="images/email.png" alt="" />
+          <img src="images/phone.png" alt="" />
+          <img src="images/github.png" alt="" />
         </div> -->
-      </div>
+      
+      <!-- <div id="start-animation" class="page">
+        <div id="tree-lightbulb">
+          <img src="/images/tree.png" alt="" />
+        </div>
+      </div> -->
 
       <div class="page" id="home">
         <div id="remaining-space-home">
-          <div id="contact-home">
-            <img src="/images/linkedin.png" alt="" />
-            <img src="/images/email.png" alt="" />
-            <img src="/images/phone.png" alt="" />
-            <img src="/images/github.png" alt="" />
-          </div>
+          <!-- <div id="contact-home">
+            <img src="images/linkedin.png" alt="" />
+            <img src="images/email.png" alt="" />
+            <img src="images/phone.png" alt="" />
+            <img src="images/github.png" alt="" />
+          </div> -->
           <div id="veronica"></div>
         </div>
         <div id="frame-right"></div>
@@ -57,10 +85,9 @@
       <div class="page" id="about">
         <div id="frame-left"></div>
         <div id="remaining-space-about">
-          <img id="profile-pic" src="/images/Elephant.png" alt="" />
           <div id="about-text-container">
             <p class="about-text">
-              Hi, I’m Veronica, an ex bio-engineer transitioning to the dynamic
+              Hi, I’m Veronica, a bio-engineer transitioning to the dynamic
               world of front-end development. My journey began in the
               intricacies of biological systems, where precision and attention
               to detail is equal to those in the world of coding were I now feel
@@ -78,52 +105,55 @@
               but also a step forward in my personal and professional growth.
             </p>
           </div>
-          <div id="contact-about">
-            <img src="/images/linkedin.png" alt="" />
-            <img src="/images/email.png" alt="" />
-            <img src="/images/phone.png" alt="" />
-            <img src="/images/github.png" alt="" />
-          </div>
+          <div id="profile-pic"><img src="images/profile-picture.png" alt="" /></div>
+          <!-- <div id="contact-about">
+            <img src="images/linkedin.png" alt="" />
+            <img src="images/email.png" alt="" />
+            <img src="images/phone.png" alt="" />
+            <img src="images/github.png" alt="" />
+          </div> -->
         </div>
       </div>
       <div class="page" id="projects">
         <div id="projects-left">
           <div class="project-card" onclick="displayProjectFunction(0)">
-            <img src="/images/meal-review2.png" alt="" />
+            <img src="images/meal-small.jpg" alt="" />
             <div class="project-name"><p>Meal Review</p></div>
           </div>
 
           <div class="project-card" onclick="displayProjectFunction(1)">
-            <img src="/images/project-drum-small.png" alt="" />
-            <div class="project-name"><p>Drum-Machine</p></div>
+            <img src="images/drum-small.jpg" alt="" />
+            <div class="project-name"><p>Drum-machine</p></div>
           </div>
           <div class="project-card" onclick="displayProjectFunction(2)">
-            <img src="/images/project-match-small.png" alt="" />
-            <div class="project-name"><p>Meal Review</p></div>
+            <img src="images/quiz-small.jpg" alt="" />
+            <div class="project-name"><p>Quiz-game</p></div>
           </div>
           <div class="project-card" onclick="displayProjectFunction(3)">
-            <img src="/images/meal-review2.png" alt="" />
-            <div class="project-name"><p>Meal Review</p></div>
+            <img src="images/match-small.jpg" alt="" />
+            <div class="project-name"><p>Match two game</p></div>
           </div>
         </div>
-
+<div id="remaining-space-projects">
+  <!-- <div id="creativity"><img  src="/images/creativity.png" alt=""></div> -->
+  <div id="creativity"> <img src="/images/creativity2.png" alt="">   </div>
         <div id="project-container"></div>
-
+</div>
         <div id="projects-right">
           <div class="project-card" onclick="displayProjectFunction(4)">
-            <img src="/images/meal-review2.png" alt="" />
-            <div class="project-name"><p>Meal Review</p></div>
+            <img src="images/games-small.jpg" alt="" />
+            <div class="project-name"><p>Top 10 games</p></div>
           </div>
           <div class="project-card" onclick="displayProjectFunction(5)">
-            <img src="/images/meal-review2.png" alt="" />
-            <div class="project-name"><p>Meal Review</p></div>
+            <img src="images/AI-small.jpg" alt="" />
+            <div class="project-name"><p> AI-webstore</p></div>
           </div>
           <div class="project-card" onclick="displayProjectFunction(6)">
-            <img src="/images/meal-review2.png" alt="" />
-            <div class="project-name"><p>Meal Review</p></div>
+            <img src="images/planet-small.jpg" alt="" />
+            <div class="project-name"><p>Planet project</p></div>
           </div>
           <div class="project-card" onclick="displayProjectFunction(7)">
-            <img src="/images/meal-review2.png" alt="" />
+            <img src="images/meal-review2.png" alt="" />
             <div class="project-name"><p>Meal Review</p></div>
           </div>
         </div>
