@@ -5,7 +5,7 @@ const homeBtn = document.getElementById("home-btn");
 const aboutBtn = document.getElementById("about-btn");
 const projectsBtn = document.getElementById("projects-btn");
 const projectCard = document.querySelectorAll(".project-card");
-const displayProjects = document.getElementById("display-projects");
+// const displayProjects = document.getElementById("display-projects");
 const navBar = document.getElementById("nav-bar");
 const projectOne = document.getElementById("project-one");
 const projectContainer = document.getElementById("project-container");
@@ -206,13 +206,18 @@ function displayProjectFunction(index) {
 
   imageContainer.append(image);
 
+  const textContainer = document.createElement("div");
+  textContainer.classList.add("text-container");
+
+  projectContainer.append(textContainer);
+
   const upperContainer = document.createElement("div");
   upperContainer.classList.add("upper-container");
 
   const bottomContainer = document.createElement("div");
   bottomContainer.classList.add("bottom-container");
 
-  projectContainer.append(upperContainer, bottomContainer);
+  textContainer.append(upperContainer, bottomContainer);
 
   const title = document.createElement("div");
   title.classList.add("title");

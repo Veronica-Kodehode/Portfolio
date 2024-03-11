@@ -21,33 +21,6 @@ main {
   display: flex;
 }
 
-/* #contact {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-} */
-
-/* #contact-btn {
-  border: 2px solid yellow;
-  position: relative;
-} */
-
-#home-btn {
-  opacity: 100%;
-}
-
-/* #dropdown-menu {
-  padding: 0px 45px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  pointer-events: none;
-} */
-
 .nav-btn {
   font-size: 1.8rem;
   font-family: "Averia Serif Libre", serif;
@@ -61,14 +34,9 @@ main {
   text-decoration: underline;
 }
 
-/* #start-animation {
-  position: absolute;
-  z-index: 5;
-  background-color: #04101b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+#home-btn {
+  opacity: 100%;
+}
 
 #home {
   background-image: linear-gradient(to right, #04101b, #071d30);
@@ -84,7 +52,7 @@ main {
   align-items: center;
 }
 
-#contact-home {
+.contact-bar {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -96,6 +64,16 @@ main {
   padding: 10px;
 }
 
+.border {
+  background-image: url(./images/frame\ left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19rem;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+/* change to text */
 #veronica {
   background-image: url(./images/Veronicapng.png);
   background-size: contain;
@@ -104,65 +82,28 @@ main {
   width: 40rem;
 }
 
-#frame-right {
-  background-image: url(./images/frame\ left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 19rem;
-  /* height: auto; */
-  /* border: 2px solid red; */
-  right: 0;
-  transform: scaleX(-1);
-}
-
-#home-btn {
-}
-
 #about {
   background-image: linear-gradient(to right, #04101b, #071d30);
-  /* border: 3px solid red; */
   position: absolute;
   display: flex;
   z-index: 0;
 }
 
-#frame-left {
-  border: solid 3px orangered;
-  background-image: url(./images/frame\ left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 19rem;
-}
-
 #remaining-space-about {
-  /* border: 3px solid yellow; */
   flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#contact-about {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  padding: 10px;
-}
 
 #about-text-container {
   width: 35rem;
   height: fit-content;
-  /* border: 2px solid red; */
   margin-left: 15rem;
 }
 
 #profile-pic {
-  /* border: 3px solid greenyellow; */
   margin-bottom: 10rem;
 }
 
@@ -170,6 +111,8 @@ main {
   display: flex;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
@@ -203,65 +146,60 @@ main {
   color: #e44d26;
 }
 
-#about-btn {
-}
-
 #projects {
   display: flex;
   background-image: radial-gradient(#071d30, #04101b);
-  /* background-image: radial-gradient( #04101b, #071d30); */
   position: absolute;
   z-index: 0;
-  /* border: 3px solid red; */
 }
 
-#display-projects {
+/* #display-projects {
   flex-grow: 0.9;
-  /* border: 3px solid white; */
+  border: 3px solid white;
   margin: 4.5rem 4rem 2rem;
   display: flex;
   flex-direction: column;
-}
+} */
 
-#display-projects img {
+/* #display-projects img {
   height: fit-content;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-}
+} */
 
 #remaining-space-projects {
   flex-grow: 1;
-  /* width: 80%; */
-  /* border: 3px solid red; */
+  border: 3px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #creativity {
-  /* border: 3px solid yellow; */
+  border: 3px solid yellow;
   position: absolute;
-  /* z-index: 0; */
 }
 
 #project-container {
   width: 70rem;
-  /* height: 50rem; */
+  height: 50rem;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   margin-top: 5rem;
   justify-content: center;
 
-  /* border: 5px solid rgb(64, 161, 207); */
-  /* box-shadow: 0 0 20px 10px rgba(255, 255, 204, 0.7); */
+  border: 5px solid rgb(64, 161, 207);
 }
 
 .image-container {
   width: 70rem;
+  height: 70%;
+  border: 3px solid lightcoral;
+}
 
-  /* height: 30rem; */
-  /* border: 3px solid red; */
+.text-container {
+  height: 30%;
 }
 
 #description-container {
