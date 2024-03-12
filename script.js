@@ -92,7 +92,7 @@ const projectsData = [
   },
   {
     image: "project-match-big.png",
-    name: "Match two game",
+    name: "Match two",
     description:
       "This match two game would offer plenty of fun with a large pool of randomized images to match up. Too bad it's incomplete and full of bugs that there has been no time to finish, fix and polish. Maybe one day this will be complete 😁",
     tools: ["html.png", "css.png", "js.png"],
