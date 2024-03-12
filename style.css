@@ -14,7 +14,6 @@ main {
 }
 
 #nav-bar {
-  height: 5rem;
   background-color: transparent;
   position: absolute;
   z-index: 100;
@@ -73,6 +72,7 @@ main {
   width: 19rem;
   right: 0;
   transform: scaleX(-1);
+  border: #7f3dd3 3px solid;
 }
 
 /* change to text */
@@ -102,9 +102,10 @@ main {
 }
 
 #about-text-container {
-  width: 35rem;
+  width: 38%;
   height: fit-content;
   margin-left: 15rem;
+  border: #29a427 3px solid;
 }
 
 #profile-pic {
@@ -159,7 +160,7 @@ main {
 }
 
 #remaining-space-projects {
-  flex-grow: 1;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,8 +202,8 @@ main {
 }
 
 .project-card {
-  height: 10rem;
-  width: 10rem;
+  height: 17vh;
+  width: 9vw;
 }
 
 .project-card img {
@@ -214,7 +215,7 @@ main {
 }
 
 .project-name {
-  width: 10rem;
+  width: 9vw;
   background-color: #ffffcc;
   color: #071d30;
   font-family: "League Gothic", sans-serif;
@@ -228,8 +229,8 @@ main {
 /* -----------------Projects generated----------------------- */
 
 #project-container {
-  width: 65rem;
-  height: 45rem;
+  width: 75%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
