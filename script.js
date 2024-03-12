@@ -225,6 +225,7 @@ function displayProjectFunction(index) {
   links.classList.add("links");
   project.links.forEach((link) => {
     const linkAnchor = document.createElement("a");
+    linkAnchor.setAttribute("target", "_blank");
     linkAnchor.href = link.url;
 
     const linkImg = document.createElement("img");
