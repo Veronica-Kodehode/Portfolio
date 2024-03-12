@@ -76,7 +76,8 @@ const projectsData = [
   {
     image: "project-quiz-big.png",
     name: "Quiz game",
-    description: "Test your general knowledge in this little quiz game. Can you get all 10 answers right? Score function will be added in a future update",
+    description:
+      "Test your general knowledge in this little quiz game. Can you get all 10 answers right? Score function will be added in a future update",
     tools: ["html.png", "css.png", "js.png"],
     links: [
       {
@@ -155,12 +156,10 @@ const projectsData = [
   },
   {
     image: "project-creativity-big.png",
-    name: "To be done",
-    description:
-      "More fun projects coming soon to a device near you 🤩",
+    name: "Coming soon",
+    description: "More fun projects coming soon to a device near you 🤩",
     tools: ["imagination.png"],
-    links: [
-    ],
+    links: [],
   },
 ];
 
@@ -168,12 +167,12 @@ const projectsData = [
 
 function displayProjectFunction(index) {
   creativity.style.visibility = "hidden";
-  
+
   const project = projectsData[index];
- 
+
   // Clear previous content
   while (projectContainer.firstChild) {
-  projectContainer.removeChild(projectContainer.firstChild);
+    projectContainer.removeChild(projectContainer.firstChild);
   }
 
   // create container for big project image and get image out of object array and place in container
@@ -215,25 +214,25 @@ function displayProjectFunction(index) {
   const tools = document.createElement("div");
   tools.classList.add("tools");
   project.tools.forEach((tool) => {
-  const toolImg = document.createElement("img");
-  toolImg.src = `images/${tool}`;
-  toolImg.classList.add("tool-img");
-  tools.appendChild(toolImg);
+    const toolImg = document.createElement("img");
+    toolImg.src = `images/${tool}`;
+    toolImg.classList.add("tool-img");
+    tools.appendChild(toolImg);
   });
-   upperContainer.appendChild(tools);
+  upperContainer.appendChild(tools);
 
   const links = document.createElement("div");
   links.classList.add("links");
   project.links.forEach((link) => {
-  const linkAnchor = document.createElement("a");
-  linkAnchor.href = link.url;
+    const linkAnchor = document.createElement("a");
+    linkAnchor.href = link.url;
 
-  const linkImg = document.createElement("img");
-  linkImg.src = `images/${link.logo}`;
-  linkImg.classList.add("link-img");
+    const linkImg = document.createElement("img");
+    linkImg.src = `images/${link.logo}`;
+    linkImg.classList.add("link-img");
 
-  linkAnchor.appendChild(linkImg);
-  links.appendChild(linkAnchor);
+    linkAnchor.appendChild(linkImg);
+    links.appendChild(linkAnchor);
   });
   bottomContainer.appendChild(links);
 }
