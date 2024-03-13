@@ -27,6 +27,7 @@ main {
   background-color: transparent;
   color: #ffffcc;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .nav-btn:hover {
