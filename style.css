@@ -195,12 +195,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.projects-img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  width: 100%;
-  height: 80%;
-}
+
 
 .project-card {
   height: 17vh;
@@ -245,6 +240,12 @@ main {
   height: 70%;
 }
 
+.projects-img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
 .text-container {
   height: 30%;
 }
