@@ -6,8 +6,10 @@ const aboutBtn = document.getElementById("about-btn");
 const projectsBtn = document.getElementById("projects-btn");
 const projectContainer = document.getElementById("project-container");
 const creativity = document.getElementById("creativity");
+const contactPhone = document.querySelectorAll(".contact-phone")
+const phoneNumber = document.querySelectorAll(".phone-number")
 
-// this can be written better, in a loop. (to do when have time)
+// (to do) => this can be written better ?
 
 aboutBtn.addEventListener("click", () => {
   about.style.zIndex = "6";
@@ -34,6 +36,15 @@ projectsBtn.addEventListener("click", () => {
   projectsBtn.style.opacity = "1";
   homeBtn.style.opacity = "0.5";
   aboutBtn.style.opacity = ".5";
+});
+
+// contact display phone number
+
+contactPhone.forEach((contactPhone, index) => {
+  contactPhone.addEventListener("click", () => {
+    phoneNumber[index].classList.toggle("show-number");
+    phoneNumber[index].style.display = phoneNumber[index].classList.contains("show-number") ? "block" : "none";
+  });
 });
 
 // object-array of projects data

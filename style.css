@@ -64,7 +64,27 @@ main {
   flex-direction: column;
   gap: 0.9rem;
   padding: 10px;
+  cursor: pointer;
 }
+
+.phone-number {
+color: #ffffcc;
+position: absolute;
+  bottom: 7.7%;
+  left: 3.5%;
+  font-size: 1.2rem;
+ display: none;
+}
+
+/* to do: find out how to position this so it will work with responsive design! */
+
+.show-number {
+  color: #ffffcc;
+  position: absolute;
+    bottom: 7.7%;
+    left: 3.5%;
+    font-size: 1.5rem;
+  }
 
 .border {
   background-image: url(./images/frame\ left.png);
@@ -200,6 +220,7 @@ main {
 .project-card {
   height: 17vh;
   width: 9vw;
+  cursor: pointer;
 }
 
 .project-card img {
