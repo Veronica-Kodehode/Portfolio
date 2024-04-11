@@ -68,12 +68,12 @@ main {
 }
 
 .phone-number {
-color: #ffffcc;
-position: absolute;
+  color: #ffffcc;
+  position: absolute;
   bottom: 7.7%;
   left: 3.5%;
   font-size: 1.2rem;
- display: none;
+  display: none;
 }
 
 /* to do: find out how to position this so it will work with responsive design! */
@@ -81,10 +81,10 @@ position: absolute;
 .show-number {
   color: #ffffcc;
   position: absolute;
-    bottom: 7.7%;
-    left: 3.5%;
-    font-size: 1.5rem;
-  }
+  bottom: 7.7%;
+  left: 3.5%;
+  font-size: 1.5rem;
+}
 
 .border {
   background-image: url(./images/frame\ left.png);
@@ -215,8 +215,6 @@ position: absolute;
   margin-bottom: 1.5rem;
 }
 
-
-
 .project-card {
   height: 17vh;
   width: 9vw;
@@ -292,7 +290,7 @@ position: absolute;
   color: #071d30;
   font-family: "League Gothic", sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3vw;
   padding: 1rem;
 }
 

@@ -6,8 +6,8 @@ const aboutBtn = document.getElementById("about-btn");
 const projectsBtn = document.getElementById("projects-btn");
 const projectContainer = document.getElementById("project-container");
 const creativity = document.getElementById("creativity");
-const contactPhone = document.querySelectorAll(".contact-phone")
-const phoneNumber = document.querySelectorAll(".phone-number")
+const contactPhone = document.querySelectorAll(".contact-phone");
+const phoneNumber = document.querySelectorAll(".phone-number");
 
 // (to do) => this can be written better ?
 
@@ -43,7 +43,11 @@ projectsBtn.addEventListener("click", () => {
 contactPhone.forEach((contactPhone, index) => {
   contactPhone.addEventListener("click", () => {
     phoneNumber[index].classList.toggle("show-number");
-    phoneNumber[index].style.display = phoneNumber[index].classList.contains("show-number") ? "block" : "none";
+    phoneNumber[index].style.display = phoneNumber[index].classList.contains(
+      "show-number"
+    )
+      ? "block"
+      : "none";
   });
 });
 
@@ -149,19 +153,18 @@ const projectsData = [
     ],
   },
   {
-    image: "project-planet-big.png",
-    name: "The planet Jupiter",
-    description:
-      "A very simple planet project. As an early assignment we created a simple website displaying the planet Jupiter and all the glorious facts about the giant planet.",
-    tools: ["html.png", "css.png"],
+    image: "calculator.png",
+    name: "React calculator",
+    description: "A simple calculator made using react",
+    tools: ["html.png", "css.png", "js.png", "react-dark.png"],
     links: [
       {
         logo: "github2.png",
-        url: "https://github.com/elliot-kodehode/assignment-3",
+        url: "https://github.com/Veronica-Kodehode/Calculator-React",
       },
       {
         logo: "go.png",
-        url: "https://elliot-kodehode.github.io/assignment-3/",
+        url: "https://veronica-kodehode.github.io/Calculator-React/",
       },
     ],
   },
